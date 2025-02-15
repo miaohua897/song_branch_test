@@ -1,8 +1,8 @@
 """create-table
 
-Revision ID: 1583544ba4e3
+Revision ID: fa4ec1662d69
 Revises: 
-Create Date: 2025-02-07 13:33:19.091158
+Create Date: 2025-02-15 03:33:02.482963
 
 """
 from alembic import op
@@ -12,7 +12,7 @@ import os
 environment = os.getenv("FLASK_ENV")
 SCHEMA = os.environ.get("SCHEMA")
 # revision identifiers, used by Alembic.
-revision = '1583544ba4e3'
+revision = 'fa4ec1662d69'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -33,7 +33,7 @@ def upgrade():
     )
     op.create_table('albums',
     sa.Column('id', sa.Integer(), nullable=False),
-    sa.Column('user_id', sa.Integer(), nullable=True),
+    sa.Column('user_id', sa.Integer(), nullable=False),
     sa.Column('title', sa.String(length=200), nullable=False),
     sa.Column('image_url', sa.String(length=2083), nullable=False),
     sa.Column('release_year', sa.Integer(), nullable=False),
@@ -108,9 +108,6 @@ def upgrade():
         op.execute(f"ALTER TABLE album_songs SET SCHEMA {SCHEMA};")
         op.execute(f"ALTER TABLE likes SET SCHEMA {SCHEMA};")
         op.execute(f"ALTER TABLE playlist_songs SET SCHEMA {SCHEMA};")
-       
-        
-       
 
 
 def downgrade():
