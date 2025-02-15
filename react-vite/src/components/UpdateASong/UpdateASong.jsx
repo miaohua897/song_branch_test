@@ -117,7 +117,7 @@ function UpdateASong({song_id,closeUpdateModal}){
                 {titleError!==""? <p style={{color:"red"}}>{titleError}</p>: null}
                 <input
                 type='text'
-                value={title?title:song.title}
+                value={title}
                 onChange={(e)=>setTitle(e.target.value)}
                  className="updateSonginput"
                 >
@@ -157,7 +157,7 @@ function UpdateASong({song_id,closeUpdateModal}){
                 </input>
                 <p>song lyrics</p>
                 <textarea
-                  value ={lyrics?lyrics:song.lyrics}
+                  value ={lyrics}
                   onChange={(e)=>setLyrics(e.target.value)}
                 //   rows='4'
                   cols='10'
@@ -168,7 +168,7 @@ function UpdateASong({song_id,closeUpdateModal}){
                 <p>song genre</p>
                 <input
                 type='text'
-                value={genre?genre:song.genre}
+                value={genre}
                 onChange={(e)=>setGenre(e.target.value)}
                  className="updateSonginput"
                 >
