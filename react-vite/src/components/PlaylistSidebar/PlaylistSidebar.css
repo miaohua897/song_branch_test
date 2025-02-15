@@ -1,0 +1,54 @@
+.playlist-folders{
+    display: flex;
+    flex-direction: column;
+}
+
+.list-folder{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.folder-desc{
+    display: flex;
+    flex-direction: column;
+}
+
+.folder-songs{
+    display: flex;
+    flex-direction: row;
+}
+
+.folder-details{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    cursor: pointer;
+}
+
+/* .folder-img{
+    overflow: hidden;
+    display: flex;
+    width: 30%;
+} */
+/* .add-to-library{
+
+} */
+.folder-img img{    
+    flex: 2 1 0;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.playlist-sidebar li{
+    list-style: none;  /* Removes bullets/numbers */
+    padding: 0;
+    margin: 0;
+}
+
+.playlist-sidebar a{
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits color from parent */
+}

@@ -1,0 +1,46 @@
+.album-info-container * {
+  margin: 0;
+  padding: 0;
+}
+
+.album-info-container {
+  flex: 2 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  row-gap: 10px;
+  padding: 0px 20px;
+  width: 100%;
+}
+
+.album-info-container svg {
+  font-size: 6px;
+}
+
+.album-info-container h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.album-info-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+}
+
+#album-artist-name {
+    font-weight: bold;
+}
+
+.add-to-playlist {
+  display: flex;
+  column-gap: 5px;
+}
+
+.add-to-playlist span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
