@@ -189,6 +189,7 @@ body{
  
   
 }
+
 .update-song-nav{
     background-color: transparent;
     border: None;
@@ -196,7 +197,9 @@ body{
     margin:3px;
     padding: 10px;
     border-bottom: 1px solid rgb(104, 102, 102);
+    cursor: pointer;
 }
+
 .delete-song-nav{
     background-color: transparent;
     border: None;
@@ -204,27 +207,21 @@ body{
     margin:3px;
     padding: 10px;
     border-bottom: 1px solid rgb(104, 102, 102);
+    cursor: pointer;
  
 }
+
 .add-song-playlist-nav button{
     background-color: transparent;
     border: None;
     color:whitesmoke;
+    cursor: pointer;
 }
 .song-detail-dropdown{
     position: relative;
    
 }
-.lyrics_format{
-    font-size: 28px;
-    font-weight: bolder;
-    padding-left: 20px;
-}
-.lyrics_detail_format{
-    padding-left: 20px;
-    font-size: 16px;
-    margin:10px;
-}
+
 .table-body{
     position: relative;
 }
@@ -239,8 +236,20 @@ body{
 .table-body:hover .play-song-button{
     display: block;
 }
+
 .addlyricsinput{
     width: 90%;
     height:80px;
     border-radius: 5px; 
+}
+.lyrics-format{
+    font-size: 28px;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+.lyrics-detail-format{
+    padding-left: 20px;
+    font-size: 16px;
+    margin:10px;
+ 
 }
